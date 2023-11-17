@@ -44,6 +44,17 @@ h4 {
     margin-bottom: 1.875rem;
     line-height: 1.4;
 }
+.quote::before,
+.quote::after {
+    content: '"';
+    font-size: 28px;
+}
+.quote::before {
+    left: -10px;
+}
+.quote::after {
+    right: -10px;
+}
 
 .separator {
     margin-bottom: 2.5rem;
