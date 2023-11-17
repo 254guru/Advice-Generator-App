@@ -1,63 +1,76 @@
 @import url(https://fonts.google.com/specimen/Manrope);
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: hsl(217, 19%, 24%);
-    min-height: 100vh;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(218, 23%, 16%);
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    color: hsl(193, 38%, 86%);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+main {
+    min-height: 100vh;
+    min-width: 15.625rem;
+    padding: 1.875rem 0.9375rem;
 }
 .container {
-    padding: 10px;
-    max-width: 500px;
-    margin: auto;
-    width: 100%;
-	display: flex;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
     justify-content: center;
-	background-color: hsl(217, 19%, 38%);
-	border-radius: 10px;
-    font-family: manrope;
-    font-weight: 800;
+}
+
+.text {
+    position: relative;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    max-width: 600px;
+    padding: 2.5rem 1.25rem;
+    border-radius: 15px;
 }
 h4 {
 	font-size: 15px;
-	margin: 20px 0px 0px auto;
     color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+    margin-bottom: 2.5rem;
 }
 .quote {
     font-size: 20px;
     color: hsl(220, 15%, 55%);
+    margin-bottom: 1.875rem;
+    line-height: 1.4;
 }
-.quote::before,
-.quote::after {
-    content: '"';
-    font-size: 28px;
-}
-.quote::before {
-    left: -10px;
-}
-.quote::after {
-    right: -10px;
-}
-.text {
-    text-align: center;
+
+.separator {
+    margin-bottom: 2.5rem;
+    width: 100%;
 }
 .attribution {
     margin-left: 5%;
 }
 
 .btn {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    width: 1.875rem;
 }
+
 .popup {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: hsl(150, 100%, 66%);
+    position: absolute;
     cursor: pointer;
-    transition: .5s;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    left: 45%;
+    bottom: 0;
+    transform: translate(-20%, 20%);
+    transition: 0.2s ease-in-out;
+    border-radius: 50%;
+    padding: 1.5625rem;
+}
+.popup:hover,
+.popup:active {
+    outline: none;
+    box-shadow: 0 0 1.875rem hsl(150, 100%, 66%);
 }
