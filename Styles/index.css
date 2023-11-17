@@ -2,9 +2,6 @@
     body {
         font-size: 15px;
     }
-    .separator {
-        content: url(./images/pattern-divider-mobile.svg);
-    }
 }
 @media (min-width: 1440px) {
     body {
