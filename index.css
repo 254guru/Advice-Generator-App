@@ -1,0 +1,29 @@
+@media (min-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+    .separator {
+        content: url(./images/pattern-divider-mobile.svg);
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        font-size: 15px;
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .text {
+        padding: calc((40 / 16) * 1rem);
+      }
+    
+    .quote {
+        font-size: calc((28 / 16) * 1rem);
+        line-height: 1.6;
+        margin-bottom: calc((35 / 16) * 1rem);
+    }
+    
+    .separator {
+        content: url(./images/pattern-divider-desktop.svg);
+    }    
+}
